@@ -1,2 +1,8 @@
-# dozer-route-legal
-Public legal pages for Dozer Rota (Dozer Route): privacy policy and app homepage links required by App Store Connect and Google Sign-In. Contains only static HTML (privacy + index). Not the game source code.
+# Dozer Route — Legal
+
+Public privacy policy and landing page for **Dozer Route**.
+
+- Privacy: https://furkannsenol.github.io/dozer-route-legal/privacy.html
+- Home: https://furkannsenol.github.io/dozer-route-legal/
+
+Used for App Store Connect and Google OAuth. Not the game source.
