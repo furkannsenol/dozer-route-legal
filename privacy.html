@@ -1,227 +1,405 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Privacy Policy — Dozer Route</title>
     <meta name="description" content="Dozer Route (Dozer Rota) privacy policy." />
     <style>
-      :root {
-        color-scheme: light dark;
-        --bg: #fafafa;
-        --text: #1a1a1a;
-        --muted: #555;
-        --accent: #004645;
-        --border: #e0e0e0;
-      }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #121212;
-          --text: #eee;
-          --muted: #aaa;
-          --border: #333;
-        }
-      }
-      body {
-        margin: 0;
-        font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.65;
-        padding: 1.5rem 1.25rem 3rem;
-      }
-      .wrap {
-        max-width: 42rem;
-        margin: 0 auto;
-      }
-      h1 {
-        color: var(--accent);
-        font-size: 1.75rem;
-        margin-top: 0;
-      }
-      h2 {
-        font-size: 1.15rem;
-        margin-top: 2rem;
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 0.35rem;
-      }
-      p,
-      li {
-        color: var(--text);
-      }
-      .muted {
-        color: var(--muted);
-        font-size: 0.95rem;
-      }
-      a {
-        color: var(--accent);
-      }
-      hr {
-        border: none;
-        border-top: 1px solid var(--border);
-        margin: 2.5rem 0;
-      }
-      .back {
-        display: inline-block;
-        margin-bottom: 1rem;
-        font-weight: 600;
-      }
+      :root { color-scheme: light dark; --bg: #fafafa; --text: #1a1a1a; --muted: #555; --accent: #004645; --on: #fff; --border: #e0e0e0; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #eee; --muted: #aaa; --accent: #6fd0cb; --on: #06201f; --border: #333; } }
+      body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; padding: 1.5rem 1.25rem 3rem; overflow-wrap: anywhere; }
+      .wrap { max-width: 42rem; margin: 0 auto; }
+      h1 { color: var(--accent); font-size: 1.75rem; line-height: 1.25; margin: 1.5rem 0 0.5rem; }
+      h2 { font-size: 1.15rem; margin-top: 2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.35rem; }
+      .muted { color: var(--muted); font-size: 0.95rem; }
+      a { color: var(--accent); }
+      a.back { font-weight: 600; }
+      .langs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 1rem; }
+      .langs a { padding: 0.25rem 0.7rem; border: 1px solid var(--border); border-radius: 999px; text-decoration: none; font-size: 0.9rem; }
+      .langs a[aria-current] { background: var(--accent); color: var(--on); border-color: var(--accent); }
+      section[id], #english { scroll-margin-top: 20rem; }
+      section[hidden] { display: none; }
+      .links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; font-weight: 600; }
     </style>
   </head>
   <body>
     <div class="wrap">
       <a class="back" href="index.html">← Dozer Route</a>
-      <h1>Gizlilik Politikası</h1>
-      <p class="muted">Son güncelleme: 21 Ekim 2026</p>
-      <p>
-        Bu politika, <strong>Dozer Rota</strong> (İngilizce: <strong>Dozer Route</strong>) mobil
-        uygulamasını (“Uygulama”) geliştiren Furkan Şenol (“biz”) tarafından yürütülür. Uygulamayı
-        kullanarak bu metni kabul etmiş olursunuz.
-      </p>
-
-      <h2>Topladığımız bilgiler</h2>
-      <ul>
-        <li>
-          <strong>Hesap bilgileri:</strong> Google veya Apple ile oturum açarsanız, sağlayıcının
-          verdiği tanımlayıcı ve (varsa) görünen ad/e-posta Firebase Authentication üzerinden
-          işlenir. Misafir oynarken anonim bir kullanıcı kimliği oluşturulabilir.
-        </li>
-        <li>
-          <strong>Oyun ilerlemesi:</strong> Seviye yıldızları, coin, ipucu bakiyesi, araç
-          envanteri, reklamsız durum ve benzeri oyun verileri cihazınızda saklanır; hesap
-          bağladıysanız Firebase Firestore ile senkronize edilebilir.
-        </li>
-        <li>
-          <strong>Satın almalar:</strong> Uygulama içi satın almalar Apple App Store (ve ileride
-          Google Play) ve RevenueCat altyapısı üzerinden işlenir; işlem doğrulama verileri bu
-          hizmet sağlayıcılarında tutulur.
-        </li>
-        <li>
-          <strong>Kullanım ve tanılama:</strong> Firebase Analytics ile uygulama kullanım
-          olayları; Firebase Crashlytics ile çökme raporları; (reklamsız sürüm hariç) Google
-          AdMob ile reklam gösterimi için gerekli tanımlayıcılar toplanabilir.
-        </li>
-        <li>
-          <strong>Cihaz bilgisi:</strong> Uygulama sürümü, platform, dil/bölge gibi teknik
-          bilgiler hizmetlerin çalışması için kullanılır.
-        </li>
-      </ul>
-
-      <h2>Bilgileri nasıl kullanıyoruz</h2>
-      <ul>
-        <li>Oyunu sunmak, ilerlemenizi kaydetmek ve cihazlar arası senkronize etmek</li>
-        <li>Oturum açma ve hesap güvenliği</li>
-        <li>Satın almaları doğrulamak ve destek vermek</li>
-        <li>Hataları gidermek ve uygulamayı iyileştirmek</li>
-        <li>Yasal yükümlülüklere uymak</li>
-      </ul>
-
-      <h2>Üçüncü taraflar</h2>
-      <p>Veriler aşağıdaki hizmet sağlayıcılarla paylaşılabilir:</p>
-      <ul>
-        <li>Google Firebase (kimlik doğrulama, veritabanı, analitik, çökme raporları)</li>
-        <li>Google AdMob (reklamlar)</li>
-        <li>RevenueCat (abonelik ve uygulama içi satın alma yönetimi)</li>
-        <li>Apple (Sign in with Apple, App Store ödemeleri)</li>
-        <li>Google (Google ile oturum açma)</li>
-      </ul>
-      <p>
-        Bu sağlayıcıların kendi gizlilik politikaları geçerlidir. Reklam kişiselleştirmesini cihaz
-        ayarlarından yönetebilirsiniz.
-      </p>
-
-      <h2>Saklama ve silme</h2>
-      <p>
-        Oyun verileri, hesabınız aktif olduğu sürece veya yasal gereklilikler için gerekli olduğu
-        kadar saklanır. Hesap silme veya veri talebi için bizimle iletişime geçebilirsiniz.
-      </p>
-
-      <h2>Çocuklar</h2>
-      <p>
-        Uygulama genel kitleye yöneliktir. Bilerek 13 yaş altından kişisel bilgi toplamıyoruz. Bir
-        ebeveyn olarak endişeniz varsa lütfen bize yazın.
-      </p>
-
-      <h2>Değişiklikler</h2>
-      <p>
-        Bu sayfayı güncelleyebiliriz. Önemli değişikliklerde tarih güncellenir; gerekirse uygulama
-        içinde de bilgilendirme yapılır.
-      </p>
-
-      <h2>İletişim</h2>
-      <p>
-        Sorularınız için:
-        <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a>
-      </p>
-
-      <hr id="english" />
-
-      <h1>Privacy Policy (English)</h1>
-      <p class="muted">Last updated: October 21, 2026</p>
-      <p>
-        This policy describes how <strong>Dozer Route</strong> (Turkish: <strong>Dozer Rota</strong>)
-        (“App”), operated by Furkan Şenol (“we”), handles information when you use the mobile app.
-      </p>
-
-      <h2>Information we collect</h2>
-      <ul>
-        <li>
-          <strong>Account data:</strong> If you sign in with Google or Apple, identifiers and
-          optional profile data are processed via Firebase Authentication. Guest play may use an
-          anonymous user ID.
-        </li>
-        <li>
-          <strong>Game progress:</strong> Level progress, coins, hints, vehicles, ad-free status,
-          and similar data are stored on your device and may sync to Firebase Firestore when
-          linked to an account.
-        </li>
-        <li>
-          <strong>Purchases:</strong> In-app purchases are handled by the App Store (and Google Play
-          when available) and RevenueCat.
-        </li>
-        <li>
-          <strong>Usage &amp; diagnostics:</strong> Firebase Analytics, Firebase Crashlytics, and
-          Google AdMob (unless ad-free) may collect usage, crash, and advertising-related data.
-        </li>
-        <li>
-          <strong>Device data:</strong> App version, platform, and locale for service operation.
-        </li>
-      </ul>
-
-      <h2>How we use information</h2>
-      <ul>
-        <li>Provide the game, save progress, and sync across devices</li>
-        <li>Authentication and security</li>
-        <li>Validate purchases and provide support</li>
-        <li>Fix bugs and improve the app</li>
-        <li>Comply with legal obligations</li>
-      </ul>
-
-      <h2>Third parties</h2>
-      <p>
-        We use Google Firebase, Google AdMob, RevenueCat, Apple, and Google sign-in. Each provider
-        has its own privacy policy. You can control ad personalization in device settings.
-      </p>
-
-      <h2>Retention &amp; deletion</h2>
-      <p>
-        We retain data while your account is active or as required by law. Contact us to request
-        deletion.
-      </p>
-
-      <h2>Children</h2>
-      <p>
-        The app is not directed at children under 13. We do not knowingly collect personal
-        information from children under 13.
-      </p>
-
-      <h2>Changes</h2>
-      <p>We may update this page; the “last updated” date will change accordingly.</p>
-
-      <h2>Contact</h2>
-      <p>
-        <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a>
-      </p>
+      <nav class="langs" aria-label="Language">
+        <a href="#tr" lang="tr">Türkçe</a>
+        <a href="#en" lang="en">English</a>
+        <a href="#es" lang="es">Español</a>
+        <a href="#de" lang="de">Deutsch</a>
+        <a href="#fr" lang="fr">Français</a>
+        <a href="#pt" lang="pt-BR">Português</a>
+        <a href="#ja" lang="ja">日本語</a>
+        <a href="#zh" lang="zh-Hans">中文</a>
+      </nav>
+      <section id="tr" lang="tr" data-title="Gizlilik Politikası — Dozer Route">
+        <h1>Gizlilik Politikası</h1>
+        <p class="muted">Son güncelleme: 25 Kasım 2026</p>
+        <p>Bu politika, Furkan Şenol (“biz”) tarafından geliştirilen <strong>Dozer Rota</strong> (İngilizce: <strong>Dozer Route</strong>) mobil uygulamasının (“Uygulama”) bilgileri nasıl işlediğini açıklar.</p>
+        <h2>Topladığımız bilgiler</h2>
+        <ul>
+          <li><strong>Hesap bilgileri:</strong> Google veya Apple ile oturum açarsanız, sağlayıcının verdiği tanımlayıcı ve (varsa) görünen ad ile e-posta Firebase Authentication üzerinden işlenir. Misafir oynarken anonim bir kullanıcı kimliği oluşturulabilir. iOS’ta Game Center oyuncu bilgileriniz de kullanılabilir.</li>
+          <li><strong>Oyun ilerlemesi:</strong> Seviye yıldızları, coin, ipucu bakiyesi, araçlar, reklamsız durumu ve benzeri veriler cihazınızda saklanır; hesap bağladıysanız Firebase Firestore ile senkronize edilebilir.</li>
+          <li><strong>Satın almalar:</strong> Ödemeler Apple App Store (ve sunulduğunda Google Play) tarafından alınır; kart bilgilerinizi görmeyiz. Satın almaları doğrulamak için işlem verileri ve kullanıcı kimliğiniz RevenueCat tarafından işlenir.</li>
+          <li><strong>Kullanım ve tanılama:</strong> Firebase Analytics kullanım olaylarını, kullanıcı kimliğini, cihaz bölgesini ve oturum türünü; Firebase Crashlytics çökme raporlarını işleyebilir.</li>
+          <li><strong>Reklamlar:</strong> Google AdMob, reklam göstermek için cihaz ve reklam verilerini işleyebilir. Reklamsız sürümü satın alanlara reklam gösterilmez.</li>
+          <li><strong>Cihaz bilgisi:</strong> Uygulama sürümü, platform, dil ve bölge gibi teknik bilgiler.</li>
+        </ul>
+        <h2>Bilgileri nasıl kullanıyoruz</h2>
+        <ul>
+          <li>Oyunu sunmak, ilerlemenizi kaydetmek ve cihazlar arası senkronize etmek</li>
+          <li>Oturum açma ve hesap güvenliği</li>
+          <li>Satın almaları doğrulamak ve destek vermek</li>
+          <li>Reklam göstermek</li>
+          <li>Hataları gidermek ve uygulamayı iyileştirmek</li>
+          <li>Yasal yükümlülüklere uymak</li>
+        </ul>
+        <h2>Üçüncü taraflar</h2>
+        <ul>
+          <li>Google Firebase: kimlik doğrulama, veritabanı, analitik, çökme raporları</li>
+          <li>Google AdMob: reklamlar</li>
+          <li>RevenueCat: uygulama içi satın alma yönetimi</li>
+          <li>Apple: Apple ile giriş, Game Center, App Store ödemeleri</li>
+          <li>Google: Google ile giriş</li>
+        </ul>
+        <p>Bu sağlayıcıların kendi gizlilik politikaları geçerlidir. Reklam kişiselleştirmesini cihaz ayarlarından yönetebilirsiniz.</p>
+        <h2>Saklama, silme ve haklarınız</h2>
+        <p>Veriler, hesabınız aktif olduğu sürece veya yasal olarak gerektiği kadar saklanır. Verilerinize erişmek, düzeltmek veya hesabınızı ve verilerinizi sildirmek için bize yazabilirsiniz: <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Çocuklar</h2>
+        <p>Uygulama genel kitleye yöneliktir ve 13 yaş altı çocukları hedeflemez. 13 yaş altından bilerek kişisel bilgi toplamayız. Endişeniz varsa lütfen bize yazın.</p>
+        <h2>Değişiklikler</h2>
+        <p>Bu sayfayı güncelleyebiliriz. Değişiklik yaptığımızda yukarıdaki tarih de güncellenir.</p>
+        <h2>İletişim</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#tr">Kullanım Koşulları</a></p>
+      </section>
+      <section id="en" lang="en" data-title="Privacy Policy — Dozer Route">
+        <span id="english"></span>
+        <h1>Privacy Policy</h1>
+        <p class="muted">Last updated: November 25, 2026</p>
+        <p>This policy explains how the <strong>Dozer Route</strong> (Turkish: <strong>Dozer Rota</strong>) mobile app (“App”), developed by Furkan Şenol (“we”), handles information.</p>
+        <h2>Information we collect</h2>
+        <ul>
+          <li><strong>Account data:</strong> If you sign in with Google or Apple, the provider’s identifier and, where available, your display name and email are processed through Firebase Authentication. Guest play may use an anonymous user ID. On iOS, your Game Center player information may also be used.</li>
+          <li><strong>Game progress:</strong> Level stars, coins, hint balance, vehicles, ad-free status and similar data are stored on your device and may sync to Firebase Firestore when you link an account.</li>
+          <li><strong>Purchases:</strong> Payments are taken by the Apple App Store (and Google Play when available); we do not see your card details. RevenueCat processes transaction data and your user ID to validate purchases.</li>
+          <li><strong>Usage and diagnostics:</strong> Firebase Analytics may process usage events, your user ID, device region and sign-in type; Firebase Crashlytics may process crash reports.</li>
+          <li><strong>Ads:</strong> Google AdMob may process device and advertising data to show ads. Ads are not shown to users who buy the ad-free version.</li>
+          <li><strong>Device data:</strong> Technical information such as app version, platform, language and region.</li>
+        </ul>
+        <h2>How we use information</h2>
+        <ul>
+          <li>Provide the game, save progress and sync across devices</li>
+          <li>Sign-in and account security</li>
+          <li>Validate purchases and provide support</li>
+          <li>Show ads</li>
+          <li>Fix bugs and improve the App</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+        <h2>Third parties</h2>
+        <ul>
+          <li>Google Firebase: authentication, database, analytics, crash reports</li>
+          <li>Google AdMob: ads</li>
+          <li>RevenueCat: in-app purchase management</li>
+          <li>Apple: Sign in with Apple, Game Center, App Store payments</li>
+          <li>Google: Google sign-in</li>
+        </ul>
+        <p>Each provider has its own privacy policy. You can manage ad personalization in your device settings.</p>
+        <h2>Retention, deletion and your rights</h2>
+        <p>We keep data while your account is active or as required by law. To access or correct your data, or to have your account and data deleted, write to us: <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Children</h2>
+        <p>The App is intended for a general audience and is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you have a concern, please write to us.</p>
+        <h2>Changes</h2>
+        <p>We may update this page. When we do, the date above changes too.</p>
+        <h2>Contact</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#en">Terms of Use</a></p>
+      </section>
+      <section id="es" lang="es" data-title="Política de privacidad — Dozer Route">
+        <h1>Política de privacidad</h1>
+        <p class="muted">Última actualización: 25 de noviembre de 2026</p>
+        <p>Esta política explica cómo la aplicación móvil <strong>Dozer Route</strong> (en turco: <strong>Dozer Rota</strong>) (la “Aplicación”), desarrollada por Furkan Şenol (“nosotros”), trata la información.</p>
+        <h2>Información que recopilamos</h2>
+        <ul>
+          <li><strong>Datos de la cuenta:</strong> Si inicias sesión con Google o Apple, el identificador del proveedor y, si están disponibles, tu nombre visible y correo electrónico se tratan mediante Firebase Authentication. Al jugar como invitado puede crearse un ID de usuario anónimo. En iOS también puede usarse tu información de jugador de Game Center.</li>
+          <li><strong>Progreso del juego:</strong> Las estrellas, monedas, pistas, vehículos, el estado sin anuncios y datos similares se guardan en tu dispositivo y pueden sincronizarse con Firebase Firestore si vinculas una cuenta.</li>
+          <li><strong>Compras:</strong> Los pagos los cobra Apple App Store (y Google Play cuando esté disponible); no vemos los datos de tu tarjeta. RevenueCat trata los datos de la transacción y tu ID de usuario para validar las compras.</li>
+          <li><strong>Uso y diagnóstico:</strong> Firebase Analytics puede tratar eventos de uso, tu ID de usuario, la región del dispositivo y el tipo de inicio de sesión; Firebase Crashlytics puede tratar informes de fallos.</li>
+          <li><strong>Anuncios:</strong> Google AdMob puede tratar datos del dispositivo y publicitarios para mostrar anuncios. No se muestran anuncios a quienes compran la versión sin anuncios.</li>
+          <li><strong>Datos del dispositivo:</strong> Información técnica como la versión de la aplicación, la plataforma, el idioma y la región.</li>
+        </ul>
+        <h2>Cómo usamos la información</h2>
+        <ul>
+          <li>Ofrecer el juego, guardar el progreso y sincronizarlo entre dispositivos</li>
+          <li>Inicio de sesión y seguridad de la cuenta</li>
+          <li>Validar compras y prestar asistencia</li>
+          <li>Mostrar anuncios</li>
+          <li>Corregir errores y mejorar la Aplicación</li>
+          <li>Cumplir obligaciones legales</li>
+        </ul>
+        <h2>Terceros</h2>
+        <ul>
+          <li>Google Firebase: autenticación, base de datos, análisis, informes de fallos</li>
+          <li>Google AdMob: anuncios</li>
+          <li>RevenueCat: gestión de compras dentro de la aplicación</li>
+          <li>Apple: inicio de sesión con Apple, Game Center, pagos de App Store</li>
+          <li>Google: inicio de sesión con Google</li>
+        </ul>
+        <p>Cada proveedor tiene su propia política de privacidad. Puedes gestionar la personalización de anuncios en los ajustes del dispositivo.</p>
+        <h2>Conservación, eliminación y tus derechos</h2>
+        <p>Conservamos los datos mientras tu cuenta esté activa o según exija la ley. Para acceder a tus datos, corregirlos o solicitar la eliminación de tu cuenta y tus datos, escríbenos: <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Menores</h2>
+        <p>La Aplicación está destinada al público general y no se dirige a menores de 13 años. No recopilamos a sabiendas información personal de menores de 13 años. Si tienes alguna inquietud, escríbenos.</p>
+        <h2>Cambios</h2>
+        <p>Podemos actualizar esta página. Cuando lo hagamos, también cambiará la fecha indicada arriba.</p>
+        <h2>Contacto</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#es">Términos de uso</a></p>
+      </section>
+      <section id="de" lang="de" data-title="Datenschutzerklärung — Dozer Route">
+        <h1>Datenschutzerklärung</h1>
+        <p class="muted">Zuletzt aktualisiert: 25. November 2026</p>
+        <p>Diese Erklärung beschreibt, wie die mobile App <strong>Dozer Route</strong> (türkisch: <strong>Dozer Rota</strong>) („App“), entwickelt von Furkan Şenol („wir“), mit Informationen umgeht.</p>
+        <h2>Welche Informationen wir erheben</h2>
+        <ul>
+          <li><strong>Kontodaten:</strong> Wenn du dich mit Google oder Apple anmeldest, werden die Kennung des Anbieters und, sofern vorhanden, dein Anzeigename und deine E-Mail-Adresse über Firebase Authentication verarbeitet. Beim Spielen als Gast kann eine anonyme Nutzer-ID erstellt werden. Unter iOS können auch deine Game-Center-Spielerdaten verwendet werden.</li>
+          <li><strong>Spielfortschritt:</strong> Levelsterne, Münzen, Hinweise, Fahrzeuge, Werbefrei-Status und ähnliche Daten werden auf deinem Gerät gespeichert und können bei verknüpftem Konto mit Firebase Firestore synchronisiert werden.</li>
+          <li><strong>Käufe:</strong> Zahlungen werden vom Apple App Store (und, sobald verfügbar, von Google Play) abgewickelt; wir sehen deine Kartendaten nicht. RevenueCat verarbeitet Transaktionsdaten und deine Nutzer-ID, um Käufe zu prüfen.</li>
+          <li><strong>Nutzung und Diagnose:</strong> Firebase Analytics kann Nutzungsereignisse, deine Nutzer-ID, die Geräteregion und die Anmeldeart verarbeiten; Firebase Crashlytics kann Absturzberichte verarbeiten.</li>
+          <li><strong>Werbung:</strong> Google AdMob kann Geräte- und Werbedaten verarbeiten, um Werbung anzuzeigen. Wer die werbefreie Version kauft, sieht keine Werbung.</li>
+          <li><strong>Gerätedaten:</strong> Technische Informationen wie App-Version, Plattform, Sprache und Region.</li>
+        </ul>
+        <h2>Wie wir Informationen verwenden</h2>
+        <ul>
+          <li>Bereitstellung des Spiels, Speicherung und geräteübergreifende Synchronisierung des Fortschritts</li>
+          <li>Anmeldung und Kontosicherheit</li>
+          <li>Prüfung von Käufen und Support</li>
+          <li>Anzeige von Werbung</li>
+          <li>Fehlerbehebung und Verbesserung der App</li>
+          <li>Erfüllung gesetzlicher Pflichten</li>
+        </ul>
+        <h2>Dritte</h2>
+        <ul>
+          <li>Google Firebase: Authentifizierung, Datenbank, Analyse, Absturzberichte</li>
+          <li>Google AdMob: Werbung</li>
+          <li>RevenueCat: Verwaltung von In-App-Käufen</li>
+          <li>Apple: Mit Apple anmelden, Game Center, App-Store-Zahlungen</li>
+          <li>Google: Google-Anmeldung</li>
+        </ul>
+        <p>Für jeden Anbieter gilt dessen eigene Datenschutzerklärung. Die Personalisierung von Werbung kannst du in den Geräteeinstellungen verwalten.</p>
+        <h2>Speicherung, Löschung und deine Rechte</h2>
+        <p>Wir speichern Daten, solange dein Konto aktiv ist oder es gesetzlich erforderlich ist. Für Auskunft, Berichtigung oder die Löschung deines Kontos und deiner Daten schreibe uns: <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Kinder</h2>
+        <p>Die App richtet sich an ein allgemeines Publikum und nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 13 Jahren. Bei Bedenken schreibe uns bitte.</p>
+        <h2>Änderungen</h2>
+        <p>Wir können diese Seite aktualisieren. In diesem Fall ändert sich auch das oben genannte Datum.</p>
+        <h2>Kontakt</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#de">Nutzungsbedingungen</a></p>
+      </section>
+      <section id="fr" lang="fr" data-title="Politique de confidentialité — Dozer Route">
+        <h1>Politique de confidentialité</h1>
+        <p class="muted">Dernière mise à jour : 25 novembre 2026</p>
+        <p>Cette politique explique comment l’application mobile <strong>Dozer Route</strong> (en turc : <strong>Dozer Rota</strong>) (l’« Application »), développée par Furkan Şenol (« nous »), traite les informations.</p>
+        <h2>Informations que nous collectons</h2>
+        <ul>
+          <li><strong>Données de compte :</strong> si vous vous connectez avec Google ou Apple, l’identifiant du fournisseur et, le cas échéant, votre nom affiché et votre e-mail sont traités via Firebase Authentication. En mode invité, un identifiant anonyme peut être créé. Sur iOS, vos informations de joueur Game Center peuvent aussi être utilisées.</li>
+          <li><strong>Progression :</strong> les étoiles, pièces, indices, véhicules, le statut sans publicité et des données similaires sont stockés sur votre appareil et peuvent être synchronisés avec Firebase Firestore si vous associez un compte.</li>
+          <li><strong>Achats :</strong> les paiements sont encaissés par l’App Store d’Apple (et Google Play lorsqu’il sera disponible) ; nous ne voyons pas vos données bancaires. RevenueCat traite les données de transaction et votre identifiant utilisateur pour valider les achats.</li>
+          <li><strong>Utilisation et diagnostic :</strong> Firebase Analytics peut traiter les événements d’utilisation, votre identifiant utilisateur, la région de l’appareil et le type de connexion ; Firebase Crashlytics peut traiter les rapports de plantage.</li>
+          <li><strong>Publicité :</strong> Google AdMob peut traiter des données publicitaires et relatives à l’appareil pour afficher des publicités. Aucune publicité n’est affichée aux personnes ayant acheté la version sans publicité.</li>
+          <li><strong>Données de l’appareil :</strong> informations techniques telles que la version de l’application, la plateforme, la langue et la région.</li>
+        </ul>
+        <h2>Comment nous utilisons les informations</h2>
+        <ul>
+          <li>Fournir le jeu, enregistrer la progression et la synchroniser entre appareils</li>
+          <li>Connexion et sécurité du compte</li>
+          <li>Valider les achats et fournir une assistance</li>
+          <li>Afficher des publicités</li>
+          <li>Corriger les bugs et améliorer l’Application</li>
+          <li>Respecter nos obligations légales</li>
+        </ul>
+        <h2>Tiers</h2>
+        <ul>
+          <li>Google Firebase: authentification, base de données, analyse, rapports de plantage</li>
+          <li>Google AdMob: publicités</li>
+          <li>RevenueCat: gestion des achats intégrés</li>
+          <li>Apple: connexion avec Apple, Game Center, paiements App Store</li>
+          <li>Google: connexion avec Google</li>
+        </ul>
+        <p>Chaque fournisseur a sa propre politique de confidentialité. Vous pouvez gérer la personnalisation des publicités dans les réglages de votre appareil.</p>
+        <h2>Conservation, suppression et vos droits</h2>
+        <p>Nous conservons les données tant que votre compte est actif ou selon les exigences légales. Pour accéder à vos données, les corriger ou faire supprimer votre compte et vos données, écrivez-nous : <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Enfants</h2>
+        <p>L’Application s’adresse au grand public et ne vise pas les enfants de moins de 13 ans. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants de moins de 13 ans. En cas de doute, écrivez-nous.</p>
+        <h2>Modifications</h2>
+        <p>Nous pouvons mettre à jour cette page. Dans ce cas, la date ci-dessus change également.</p>
+        <h2>Contact</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#fr">Conditions d’utilisation</a></p>
+      </section>
+      <section id="pt" lang="pt-BR" data-title="Política de Privacidade — Dozer Route">
+        <h1>Política de Privacidade</h1>
+        <p class="muted">Última atualização: 25 de novembro de 2026</p>
+        <p>Esta política explica como o aplicativo móvel <strong>Dozer Route</strong> (em turco: <strong>Dozer Rota</strong>) (“Aplicativo”), desenvolvido por Furkan Şenol (“nós”), trata as informações.</p>
+        <h2>Informações que coletamos</h2>
+        <ul>
+          <li><strong>Dados da conta:</strong> Se você entrar com Google ou Apple, o identificador do provedor e, quando disponíveis, seu nome de exibição e e-mail são tratados pelo Firebase Authentication. Ao jogar como convidado, um ID de usuário anônimo pode ser criado. No iOS, suas informações de jogador do Game Center também podem ser usadas.</li>
+          <li><strong>Progresso do jogo:</strong> Estrelas, moedas, dicas, veículos, status sem anúncios e dados semelhantes ficam no seu dispositivo e podem ser sincronizados com o Firebase Firestore se você vincular uma conta.</li>
+          <li><strong>Compras:</strong> Os pagamentos são processados pela Apple App Store (e pelo Google Play quando disponível); não vemos os dados do seu cartão. O RevenueCat trata dados da transação e seu ID de usuário para validar compras.</li>
+          <li><strong>Uso e diagnóstico:</strong> O Firebase Analytics pode tratar eventos de uso, seu ID de usuário, a região do dispositivo e o tipo de login; o Firebase Crashlytics pode tratar relatórios de falhas.</li>
+          <li><strong>Anúncios:</strong> O Google AdMob pode tratar dados do dispositivo e de publicidade para exibir anúncios. Quem compra a versão sem anúncios não vê anúncios.</li>
+          <li><strong>Dados do dispositivo:</strong> Informações técnicas como versão do aplicativo, plataforma, idioma e região.</li>
+        </ul>
+        <h2>Como usamos as informações</h2>
+        <ul>
+          <li>Oferecer o jogo, salvar o progresso e sincronizá-lo entre dispositivos</li>
+          <li>Login e segurança da conta</li>
+          <li>Validar compras e prestar suporte</li>
+          <li>Exibir anúncios</li>
+          <li>Corrigir erros e melhorar o Aplicativo</li>
+          <li>Cumprir obrigações legais</li>
+        </ul>
+        <h2>Terceiros</h2>
+        <ul>
+          <li>Google Firebase: autenticação, banco de dados, análise, relatórios de falhas</li>
+          <li>Google AdMob: anúncios</li>
+          <li>RevenueCat: gestão de compras no aplicativo</li>
+          <li>Apple: login com a Apple, Game Center, pagamentos da App Store</li>
+          <li>Google: login com o Google</li>
+        </ul>
+        <p>Cada provedor tem sua própria política de privacidade. Você pode gerenciar a personalização de anúncios nos ajustes do dispositivo.</p>
+        <h2>Retenção, exclusão e seus direitos</h2>
+        <p>Mantemos os dados enquanto sua conta estiver ativa ou conforme exigido por lei. Para acessar ou corrigir seus dados, ou solicitar a exclusão da sua conta e dos seus dados, escreva para nós: <a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>Crianças</h2>
+        <p>O Aplicativo é destinado ao público em geral e não é direcionado a menores de 13 anos. Não coletamos intencionalmente informações pessoais de menores de 13 anos. Se tiver alguma preocupação, escreva para nós.</p>
+        <h2>Alterações</h2>
+        <p>Podemos atualizar esta página. Quando isso ocorrer, a data acima também será alterada.</p>
+        <h2>Contato</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#pt">Termos de Uso</a></p>
+      </section>
+      <section id="ja" lang="ja" data-title="プライバシーポリシー — Dozer Route">
+        <h1>プライバシーポリシー</h1>
+        <p class="muted">最終更新日：2026年11月25日</p>
+        <p>本ポリシーは、Furkan Şenol（以下「当方」）が開発するモバイルアプリ<strong>Dozer Route</strong>（トルコ語名：<strong>Dozer Rota</strong>、以下「本アプリ」）における情報の取り扱いを説明するものです。</p>
+        <h2>収集する情報</h2>
+        <ul>
+          <li><strong>アカウント情報：</strong>GoogleまたはAppleでサインインすると、プロバイダーの識別子と、提供されている場合は表示名およびメールアドレスがFirebase Authenticationで処理されます。ゲストプレイでは匿名ユーザーIDが作成されることがあります。iOSではGame Centerのプレイヤー情報が使用されることもあります。</li>
+          <li><strong>ゲームの進行状況：</strong>レベルの星、コイン、ヒント残数、車両、広告非表示の状態などは端末に保存され、アカウントを連携した場合はFirebase Firestoreと同期されることがあります。</li>
+          <li><strong>購入：</strong>お支払いはApple App Store（提供開始後はGoogle Playも含む）で処理され、当方がカード情報を見ることはありません。購入の確認のため、取引データとユーザーIDがRevenueCatで処理されます。</li>
+          <li><strong>利用状況と診断：</strong>Firebase Analyticsが利用イベント、ユーザーID、端末の地域、サインインの種類を、Firebase Crashlyticsがクラッシュレポートを処理することがあります。</li>
+          <li><strong>広告：</strong>Google AdMobが広告表示のために端末データや広告データを処理することがあります。広告非表示版を購入した方には広告は表示されません。</li>
+          <li><strong>端末情報：</strong>アプリのバージョン、プラットフォーム、言語、地域などの技術情報。</li>
+        </ul>
+        <h2>情報の利用目的</h2>
+        <ul>
+          <li>ゲームの提供、進行状況の保存、端末間の同期</li>
+          <li>サインインとアカウントの安全確保</li>
+          <li>購入の確認とサポート</li>
+          <li>広告の表示</li>
+          <li>不具合の修正と本アプリの改善</li>
+          <li>法的義務の遵守</li>
+        </ul>
+        <h2>第三者サービス</h2>
+        <ul>
+          <li>Google Firebase: 認証、データベース、分析、クラッシュレポート</li>
+          <li>Google AdMob: 広告</li>
+          <li>RevenueCat: アプリ内課金の管理</li>
+          <li>Apple: Appleでサインイン、Game Center、App Storeでの決済</li>
+          <li>Google: Googleでのサインイン</li>
+        </ul>
+        <p>各プロバイダーには独自のプライバシーポリシーが適用されます。広告のパーソナライズは端末の設定で管理できます。</p>
+        <h2>保存、削除、お客様の権利</h2>
+        <p>データは、アカウントが有効な間、または法令で必要な期間保存されます。データの開示や訂正、アカウントとデータの削除をご希望の場合は、こちらへご連絡ください：<a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>お子様について</h2>
+        <p>本アプリは一般の方を対象としており、13歳未満のお子様を対象としていません。13歳未満のお子様から意図的に個人情報を収集することはありません。ご心配な点があればご連絡ください。</p>
+        <h2>変更</h2>
+        <p>本ページは更新されることがあります。その際は上記の日付も更新されます。</p>
+        <h2>お問い合わせ</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#ja">利用規約</a></p>
+      </section>
+      <section id="zh" lang="zh-Hans" data-title="隐私政策 — Dozer Route">
+        <h1>隐私政策</h1>
+        <p class="muted">最后更新：2026年11月25日</p>
+        <p>本政策说明由 Furkan Şenol（“我们”）开发的移动应用 <strong>Dozer Route</strong>（土耳其语名：<strong>Dozer Rota</strong>，以下简称“本应用”）如何处理信息。</p>
+        <h2>我们收集的信息</h2>
+        <ul>
+          <li><strong>账户信息：</strong>如果您使用 Google 或 Apple 登录，提供方的标识符以及（如有）您的显示名称和电子邮箱将通过 Firebase Authentication 处理。以游客身份游玩时，可能会创建匿名用户 ID。在 iOS 上，也可能使用您的 Game Center 玩家信息。</li>
+          <li><strong>游戏进度：</strong>关卡星级、金币、提示余额、车辆、免广告状态等数据保存在您的设备上；如果您关联了账户，可能会与 Firebase Firestore 同步。</li>
+          <li><strong>购买：</strong>付款由 Apple App Store（以及日后提供的 Google Play）处理，我们看不到您的银行卡信息。RevenueCat 会处理交易数据和您的用户 ID 以验证购买。</li>
+          <li><strong>使用情况与诊断：</strong>Firebase Analytics 可能处理使用事件、用户 ID、设备地区和登录方式；Firebase Crashlytics 可能处理崩溃报告。</li>
+          <li><strong>广告：</strong>Google AdMob 可能会处理设备和广告数据以展示广告。购买免广告版的用户不会看到广告。</li>
+          <li><strong>设备信息：</strong>应用版本、平台、语言和地区等技术信息。</li>
+        </ul>
+        <h2>我们如何使用信息</h2>
+        <ul>
+          <li>提供游戏、保存进度并在设备间同步</li>
+          <li>登录与账户安全</li>
+          <li>验证购买并提供支持</li>
+          <li>展示广告</li>
+          <li>修复错误并改进本应用</li>
+          <li>履行法律义务</li>
+        </ul>
+        <h2>第三方</h2>
+        <ul>
+          <li>Google Firebase: 身份验证、数据库、分析、崩溃报告</li>
+          <li>Google AdMob: 广告</li>
+          <li>RevenueCat: 应用内购买管理</li>
+          <li>Apple: 通过 Apple 登录、Game Center、App Store 付款</li>
+          <li>Google: Google 登录</li>
+        </ul>
+        <p>各提供方适用其自身的隐私政策。您可以在设备设置中管理广告个性化。</p>
+        <h2>保存、删除与您的权利</h2>
+        <p>我们会在您的账户有效期间或法律要求的期限内保存数据。如需访问或更正您的数据，或删除您的账户和数据，请联系我们：<a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <h2>儿童</h2>
+        <p>本应用面向普通大众，并非针对 13 岁以下儿童。我们不会故意收集 13 岁以下儿童的个人信息。如有疑虑，请联系我们。</p>
+        <h2>变更</h2>
+        <p>我们可能会更新本页面。更新时，上方日期也会随之更改。</p>
+        <h2>联系方式</h2>
+        <p><a href="mailto:frkn.snl98@gmail.com">frkn.snl98@gmail.com</a></p>
+        <p><a href="terms.html#zh">使用条款</a></p>
+      </section>
     </div>
+    <script>
+      (function () {
+        var codes = ["tr", "en", "es", "de", "fr", "pt", "ja", "zh"];
+        function norm(v) {
+          v = (v || "").toLowerCase();
+          if (v === "english") return "en";
+          v = v.split(/[-_]/)[0];
+          return codes.indexOf(v) >= 0 ? v : null;
+        }
+        function pick() {
+          var lang = norm(location.hash.slice(1)) || norm(new URLSearchParams(location.search).get("lang"));
+          var prefs = navigator.languages || [navigator.language];
+          for (var i = 0; !lang && i < prefs.length; i++) lang = norm(prefs[i]);
+          return lang || "en";
+        }
+        function show() {
+          var lang = pick();
+          document.querySelectorAll("section[data-title]").forEach(function (s) {
+            s.hidden = s.id !== lang;
+            if (!s.hidden) {
+              document.title = s.dataset.title;
+              document.documentElement.lang = s.lang;
+            }
+          });
+          document.querySelectorAll(".langs a").forEach(function (a) {
+            if (a.hash === "#" + lang) a.setAttribute("aria-current", "true");
+            else a.removeAttribute("aria-current");
+          });
+          document.querySelector(".back") && (document.querySelector(".back").hash = lang);
+          window.scrollTo(0, 0);
+        }
+        window.addEventListener("hashchange", show);
+        show();
+      })();
+    </script>
   </body>
 </html>
