@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Dozer Route</title>
-    <meta name="description" content="Dozer Route (Dozer Rota) — maze puzzle game." />
+    <meta name="description" content="Dozer Route — maze puzzle game." />
     <style>
       :root { color-scheme: light dark; --bg: #fafafa; --text: #1a1a1a; --muted: #555; --accent: #004645; --on: #fff; --border: #e0e0e0; }
       @media (prefers-color-scheme: dark) { :root { --bg: #121212; --text: #eee; --muted: #aaa; --accent: #6fd0cb; --on: #06201f; --border: #333; } }
@@ -35,45 +35,45 @@
         <a href="#ja" lang="ja">日本語</a>
         <a href="#zh" lang="zh-Hans">中文</a>
       </nav>
-      <section id="tr" lang="tr" data-title="Dozer Route">
-        <h1>Dozer Route</h1>
-        <p class="muted">Dozer Rota — labirent bulmaca oyunu</p>
+      <section id="tr" lang="tr" data-title="Dozer Rota" data-app="Dozer Rota">
+        <h1>Dozer Rota</h1>
+        <p class="muted">labirent bulmaca oyunu</p>
         <p class="links"><a href="privacy.html#tr">Gizlilik Politikası</a> <a href="terms.html#tr">Kullanım Koşulları</a></p>
       </section>
-      <section id="en" lang="en" data-title="Dozer Route">
+      <section id="en" lang="en" data-title="Dozer Route" data-app="Dozer Route">
         <span id="english"></span>
         <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — maze puzzle game</p>
+        <p class="muted">maze puzzle game</p>
         <p class="links"><a href="privacy.html#en">Privacy Policy</a> <a href="terms.html#en">Terms of Use</a></p>
       </section>
-      <section id="es" lang="es" data-title="Dozer Route">
-        <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — juego de puzles de laberinto</p>
+      <section id="es" lang="es" data-title="Dozer Ruta" data-app="Dozer Ruta">
+        <h1>Dozer Ruta</h1>
+        <p class="muted">juego de puzles de laberinto</p>
         <p class="links"><a href="privacy.html#es">Política de privacidad</a> <a href="terms.html#es">Términos de uso</a></p>
       </section>
-      <section id="de" lang="de" data-title="Dozer Route">
+      <section id="de" lang="de" data-title="Dozer Route" data-app="Dozer Route">
         <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — Labyrinth-Puzzlespiel</p>
+        <p class="muted">Labyrinth-Puzzlespiel</p>
         <p class="links"><a href="privacy.html#de">Datenschutzerklärung</a> <a href="terms.html#de">Nutzungsbedingungen</a></p>
       </section>
-      <section id="fr" lang="fr" data-title="Dozer Route">
+      <section id="fr" lang="fr" data-title="Dozer Route" data-app="Dozer Route">
         <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — jeu de puzzle labyrinthe</p>
+        <p class="muted">jeu de puzzle labyrinthe</p>
         <p class="links"><a href="privacy.html#fr">Politique de confidentialité</a> <a href="terms.html#fr">Conditions d’utilisation</a></p>
       </section>
-      <section id="pt" lang="pt-BR" data-title="Dozer Route">
-        <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — jogo de quebra-cabeça de labirinto</p>
+      <section id="pt" lang="pt-BR" data-title="Dozer Rota" data-app="Dozer Rota">
+        <h1>Dozer Rota</h1>
+        <p class="muted">jogo de quebra-cabeça de labirinto</p>
         <p class="links"><a href="privacy.html#pt">Política de Privacidade</a> <a href="terms.html#pt">Termos de Uso</a></p>
       </section>
-      <section id="ja" lang="ja" data-title="Dozer Route">
-        <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — 迷路パズルゲーム</p>
+      <section id="ja" lang="ja" data-title="ドーザールート" data-app="ドーザールート">
+        <h1>ドーザールート</h1>
+        <p class="muted">迷路パズルゲーム</p>
         <p class="links"><a href="privacy.html#ja">プライバシーポリシー</a> <a href="terms.html#ja">利用規約</a></p>
       </section>
-      <section id="zh" lang="zh-Hans" data-title="Dozer Route">
-        <h1>Dozer Route</h1>
-        <p class="muted">Dozer Route — 迷宫益智游戏</p>
+      <section id="zh" lang="zh-Hans" data-title="推土机路线" data-app="推土机路线">
+        <h1>推土机路线</h1>
+        <p class="muted">迷宫益智游戏</p>
         <p class="links"><a href="privacy.html#zh">隐私政策</a> <a href="terms.html#zh">使用条款</a></p>
       </section>
     </div>
@@ -98,6 +98,8 @@
             s.hidden = s.id !== lang;
             if (!s.hidden) {
               document.title = s.dataset.title;
+              var b = document.querySelector(".back span");
+              if (b) b.textContent = s.dataset.app;
               document.documentElement.lang = s.lang;
             }
           });
